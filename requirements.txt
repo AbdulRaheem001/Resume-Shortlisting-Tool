@@ -1,6 +1,24 @@
+# Build dependencies
+wheel>=0.38.4
+setuptools>=65.5.1
+
+# Web interface
 streamlit==1.27.0
+
+# Data processing
 pandas==2.0.3
-nltk==3.8.1
+numpy==1.21.0
+scikit-learn==1.0.2
+
+# NLP tools - with prebuilt wheels
 spacy==3.6.1
+nltk==3.8.1
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
+# Document processing
 python-docx==0.8.11
 PyPDF2==3.0.1
+
+# Additional dependencies
+python-multipart==0.0.5
+typing-extensions==4.0.0
